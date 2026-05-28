@@ -15,8 +15,7 @@ public:
         REAR = -1;
     }
 
-    
-void insert()
+    void insert()
     {
         int num;
         cout << "Enter a number: ";
@@ -48,7 +47,7 @@ void insert()
         queue_array[REAR] = num;
     }
 
-   void remove()
+    void remove()
     {
         // cek apakah antrian kosong
         if (FRONT == -1)
@@ -157,4 +156,30 @@ int main()
                 break;
             }
 
-           
+            case '3':
+            {
+                q.display();
+                break;
+            }
+
+            case '4':
+            {
+                return 0;
+            }
+
+            default:
+            {
+                cout << "Invalid option!!!" << endl;
+                break;
+            }
+            }
+        }
+
+        catch (exception &ex)
+        {
+            cout << "check for the values entered" << endl;
+        }
+    }
+
+    return 0;
+}
